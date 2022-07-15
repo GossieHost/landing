@@ -27,10 +27,20 @@ app.use('/assets',express.static(themeDir + '/assets'));
 app.get('*', (req, res) => {
     var pa = req.path;
     if (pa == '/') pa = 'index';
+
+    pa = pa.replace('/', '');
+
+    console.log(pa);
+
     try {
-    res.render(pa, (err, html) => {
+    res.render(pa, {
+        config,
+        app,
+        req,
+        res
+    }, (err, html) => {
         if (err) {
-            return res.render('404');
+            return res.render('404', {err});
         } else {
             return res.send(html);
         }
