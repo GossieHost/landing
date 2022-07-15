@@ -1,0 +1,25 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "The landing page!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GossieHost/landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GossieHost/landing/issues"
+  },
+  "homepage": "https://github.com/GossieHost/landing#readme",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

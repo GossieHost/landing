@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    color: gray;
+
+    margin: 0px;
+
+    display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+    font-size: 200px;
+    font-weight: 0;
+    margin: 0px;
+}
+i {
+    font-size: 30px;
+    margin: 0px;
+}
