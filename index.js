@@ -32,7 +32,7 @@ app.get('*', (req, res) => {
 
     pa = pa.replace('/', '');
 
-    console.log(pa);
+    // console.log(pa);
 
     try {
         res.render(pa, {
