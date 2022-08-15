@@ -1,14 +1,14 @@
 <div class="row align-items-center">
     <% if(img.align == 'r') { %>
         <div class="col-12 col-lg-7 text-center flex-item grid-margin" data-aos="fade-right">
-        <img src="<%- img.src %>" alt="" class="img-fluid">
+        <img src="<%- img.src %>" style="max-width: 300px;" alt="<%- text %>" class="img-fluid">
         </div>
     <% } %>
     <div class="col-12 col-lg-5 flex-item grid-margin" data-aos="fade-left">
       <h3 class="m-0"><%- head %></h3>
       <div class="col-lg-9 col-xl-8 p-0">
         <%# <p class="py-4 m-0 text-muted"></p> %>
-        <p class="pb-2 font-weight-medium text-muted"><%- text2 %></p>
+        <p class="pb-2 font-weight-medium text-muted"><%- text %></p>
       </div>
       <% if (btn.enabled == true) { %>
         <a href="<%- btn.url %>" class="btn btn-info"><%- btn.text %></a>
