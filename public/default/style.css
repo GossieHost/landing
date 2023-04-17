@@ -1,3 +1,6 @@
 .bg-dark2 {
     background-color: #212529 !important;
 }
+* {
+    color: white;
+}
