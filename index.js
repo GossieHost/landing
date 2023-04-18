@@ -42,6 +42,7 @@ app.get('*', (req, res) => {
             res
         }, (err, html) => {
             if (err) {
+                console.log('err', err);
                 res.status(404);
                 return res.render('404', {err});
             } else {
