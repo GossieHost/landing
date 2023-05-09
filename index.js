@@ -22,7 +22,7 @@ app.use((req, res, next) => {
     return next();
 });
 
-var themeDir = __dirname + `/public/${config.theme}`;
+/* var themeDir = __dirname + `/public/${config.theme}`;
 app.set('views', themeDir);
 app.use('/assets', express.static(themeDir + '/assets'));
 
@@ -54,7 +54,11 @@ app.get('*', (req, res) => {
         res.send('Error: ' + String(e))
     }
     //res.send('try/catch failed?');
-});  
+});   */
+
+app.get('*', (req, res) => {
+    res.redirect('https://my.gossie.site/')
+})
 
 app.listen(config.port, () => {
     log(`Online at port ${config.port}!`);
